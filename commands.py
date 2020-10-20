@@ -29,7 +29,6 @@ def save(args):
     data = get_portals(args)
     data[args["key"]] = cur_dir
     save_portals(data, args)
-    pass
 
 def go(args):
     data = get_portals(args)
