@@ -24,17 +24,17 @@
 	- For **bash:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.bash_profile
-        . $PORTALS_ROOT/commands.sh
+        echo '. $PORTALS_ROOT/commands.sh' >> ~/.bash_profile
         ```
    - For **Ubuntu:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.bashrc
-        . $PORTALS_ROOT/commands.sh
+        echo '. $PORTALS_ROOT/commands.sh' >> ~/.bashrc
         ```
     - For **Zsh:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.zshrc
-        . $PORTALS_ROOT/commands.sh
+        echo '. $PORTALS_ROOT/commands.sh' >> ~/.zshrc
         ```
 All going well, you should now be able to restart your shell with `$SHELL`, and running `portals` should print an empty map `{}`
 
