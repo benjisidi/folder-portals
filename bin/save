@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-python ${PORTALS_ROOT}/commands.py -c save -k $*
+python3 ${PORTALS_ROOT}/commands.py -c save -k $*

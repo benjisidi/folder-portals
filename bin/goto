@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-target="$(python ${PORTALS_ROOT}/commands.py -c go -k $*)"
+target="$(python3 ${PORTALS_ROOT}/commands.py -c go -k $*)"
 cd $target
