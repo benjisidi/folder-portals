@@ -19,22 +19,22 @@
 	git clone https://github.com/benjisidi/folder-portals $HOME/.portals
 	```
 	
-3. **Define the environment variable PORTALS_ROOT** to wherever you cloned the repo to, and add `$PORTALS_ROOT/bin` to your `$PATH`.
+3. **Define the environment variable PORTALS_ROOT** to wherever you cloned the repo to, and source the `commands.sh` file.
 
 	- For **bash:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.bash_profile
-        echo 'export PATH="$PORTALS_ROOT/bin:$PATH"' >> ~/.bash_profile
+        . $PORTALS_ROOT/commands.sh
         ```
    - For **Ubuntu:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.bashrc
-        echo 'export PATH="$PORTALS_ROOT/bin:$PATH"' >> ~/.bashrc
+        . $PORTALS_ROOT/commands.sh
         ```
     - For **Zsh:**
         ```bash
         echo 'export PORTALS_ROOT="$HOME/.portals"' >> ~/.zshrc
-        echo 'export PATH="$PORTALS_ROOT/bin:$PATH"' >> ~/.zshrc
+        . $PORTALS_ROOT/commands.sh
         ```
 All going well, you should now be able to restart your shell with `$SHELL`, and running `portals` should print an empty map `{}`
 
@@ -49,3 +49,4 @@ All going well, you should now be able to restart your shell with `$SHELL`, and 
 
 
 - ...stay tuned for a more sensible version.
+
